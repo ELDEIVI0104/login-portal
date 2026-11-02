@@ -20,9 +20,11 @@ const db = mysql.createConnection({
     user: process.env.MYSQLUSER || 'root',
     password: process.env.MYSQLPASSWORD || '',
     database: process.env.MYSQLDATABASE || 'mi_proyecto_db',
-    port: process.env.MYSQLPORT || 3306
+    port: process.env.MYSQLPORT || 3306,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
-
 db.connect((err) => {
     if (err) {
         console.error('Error al conectar a MySQL:', err);
