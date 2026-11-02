@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión • Instagram</title>
+    
+    <link rel="icon" type="image/png" href="recursos2/watermarked_img_15774409347981128605.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="auth-wrapper">
+        <!-- Columna Izquierda -->
+        <div class="hero-section">
+            <header class="app-header">
+                <div class="brand-group">
+                    <img src="recursos2/fondods-de-instagram-negro-72joht5vt8n59210.jpg" alt="Logo" class="app-logo">
+                    <h1></h1>
+                </div>
+            </header>
+
+            <div class="splash-content">
+                <h2 class="splash-headline">Mira los momentos cotidianos de tus</h2>
+                <p class="splash-subheadline"><span class="gradient-text">mejores amigos.</span></p>
+                
+                <div class="media-container">
+                    <img src="recursos2/f68863af-fb25-4c00-bf4e-29234b85a94a.jpg" alt="Imagen principal" class="hero-media">
+                </div>
+            </div>
+        </div>
+
+        <!-- Columna Derecha -->
+        <div class="form-section">
+            <div class="form-card">
+                <h3 class="form-title">Iniciar sesión en Instagram</h3>
+                
+                <div id="alert" class="alert hidden"></div>
+
+                <form id="authForm" action="/login" method="POST">
+                    <div class="input-group">
+                        <label for="email" class="sr-only">Correo electrónico o Usuario</label>
+                        <input type="text" id="email" name="email" placeholder="Correo electrónico / Usuario" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password" class="sr-only">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Iniciar sesión</button>
+                </form>
+                
+                <a href="#" class="form-link">¿Olvidaste tu contraseña?</a>
+                
+                <div class="separator-text">O</div>
+                
+                <button class="btn-facebook">
+                    <svg class="facebook-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2" width="20" height="20">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span>Iniciar sesión con Facebook</span>
+                </button>
+                
+                <a href="#" class="register-link">Crear una cuenta</a>
+            </div>
+            
+            <footer class="form-footer">
+                <div class="meta-brand">
+                    <span class="meta-icon"></span> Meta
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
